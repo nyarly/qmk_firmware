@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_Q,  KC_W,  KC_E,  KC_R,  LT(RSPC,  KC_T),                      KC_TRNS,    LT(LSPC,  KC_Y),  KC_U,  KC_I,     KC_O,    KC_P    },
   {KC_A,  KC_S,  KC_D,  KC_F,  LT(RSYM,  KC_G),                      KC_TRNS,    LT(LSYM,  KC_H),  KC_J,  KC_K,     KC_L,    KC_SCLN },
   {KC_Z,  KC_X,  KC_C,  KC_V,  LT(RNUM,  KC_B),                      KC_LSFT,    LT(LNUM,  KC_N),  KC_M,  KC_COMM,  KC_DOT,  KC_SLSH },
-  {GUI_T(KC_ESC), KC_TAB, KC_LEFT, ALT_T(KC_RIGHT), SFT_T(KC_SPC),
+  {GUI_T(KC_ESC), KC_TAB, KC_LEFT, ALT_T(KC_RIGHT), KC_SPC,
     KC_LCTL,    KC_BSPC,  ALT_T(KC_UP),  KC_DOWN,  KC_QUOT,  GUI_T(KC_ENT)  }
 },
 
@@ -71,16 +71,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // Numpad plus - triggered by tap keys on the inner columns, bottom row
 [LNUM] = {
-  {KC_TRNS,  KC_LPRN,  KC_ASTR,  KC_AMPR,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_7,  KC_8,     KC_9,    KC_PLUS },
-  {KC_TRNS,  KC_CIRC,  KC_PERC,  KC_DLR,   KC_ESC,   KC_TRNS,  KC_TRNS,  KC_4,  KC_5,     KC_6,    KC_COLN },
-  {KC_TRNS,  KC_HASH,  KC_AT,    KC_EXLM,  KC_BSLS,  KC_TRNS,  KC_TRNS,  KC_1,  KC_2,     KC_3,    KC_ENT },
-  {KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_0,  KC_TRNS,  KC_DOT,  KC_ENT }
+  {KC_GRAVE,  KC_LPRN,  KC_ASTR,  KC_AMPR,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_7,  KC_8,     KC_9,    KC_PLUS },
+  {KC_TRNS,   KC_CIRC,  KC_PERC,  KC_DLR,   KC_ESC,   KC_TRNS,  KC_TRNS,  KC_4,  KC_5,     KC_6,    KC_COLN },
+  {KC_TRNS,   KC_HASH,  KC_AT,    KC_EXLM,  KC_BSLS,  KC_TRNS,  KC_TRNS,  KC_1,  KC_2,     KC_3,    KC_ENT },
+  {KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_0,  KC_TRNS,  KC_DOT,  KC_ENT }
 },
 [RNUM] = {
-  {KC_TRNS,  KC_LPRN,  KC_ASTR,  KC_AMPR,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_7,  KC_8,     KC_9,    KC_PLUS },
-  {KC_TRNS,  KC_CIRC,  KC_PERC,  KC_DLR,   KC_TRNS,  KC_TRNS,  KC_TAB,   KC_4,  KC_5,     KC_6,    KC_COLN },
-  {KC_TRNS,  KC_HASH,  KC_AT,    KC_EXLM,  KC_TRNS,  KC_TRNS,  KC_TAB,   KC_1,  KC_2,     KC_3,    KC_ENT },
-  {KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_0,  KC_TRNS,  KC_DOT,  KC_ENT }
+  {KC_GRAVE,  KC_LPRN,  KC_ASTR,  KC_AMPR,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_7,  KC_8,     KC_9,    KC_PLUS },
+  {KC_TRNS,   KC_CIRC,  KC_PERC,  KC_DLR,   KC_TRNS,  KC_TRNS,  KC_TAB,   KC_4,  KC_5,     KC_6,    KC_COLN },
+  {KC_TRNS,   KC_HASH,  KC_AT,    KC_EXLM,  KC_TRNS,  KC_TRNS,  KC_TAB,   KC_1,  KC_2,     KC_3,    KC_ENT },
+  {KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_0,  KC_TRNS,  KC_DOT,  KC_ENT }
 },
 
 [RST_LAYER] = {
